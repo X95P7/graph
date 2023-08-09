@@ -1,0 +1,115 @@
+<HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="mainpageCSS.css">
+<script src="graph.js"></script>
+<script src="mathFuncts1.js"></script>
+</head>
+				
+<body onload="onLoad()">			
+				<div id="head">
+					<div id="headLeft" class="innerHead">	
+
+						<p id="graphInputs"> Graph: 
+						
+							  <p id="graph1">
+							  <input type="text" id="graphInput1" onChange="drawMain()"> 
+							  <input type="color" value="#303030" id="graphColorInput1" onChange="drawMain()">
+							  </p>
+							  	  
+						</p>					
+						
+						
+						<p>  
+							  <form action="javascript:basePrint()">
+									<button type="submit">Print Trash</button>
+								</form>
+						</p>
+						
+						<p id="pointInputs"> Add Points:
+							  
+							  <p id="point1">
+							  <input type="text" id="pointInput1" onChange="pointManager()"> 
+							  <input type="color" value="#303030" id="pointColorInput1" onChange="pointManager()">
+							  </p>
+							  
+							  
+						</p>
+						
+						<p> Window Size:
+							<br>
+							Y Min:
+							<input type="number" value="-10" id="inputGraphLinesYMin" onChange="drawMain()"> 
+							<br>
+							Y Max:
+							<input type="number" value="10" id="inputGraphLinesYMax" onChange="drawMain()"> 
+								<br>
+							X Min:
+							<input type="number" value="-10" id="inputGraphLinesXMin" onChange="drawMain()"> 
+							<br>
+							X Max:
+							<input type="number" value="10" id="inputGraphLinesXMax" onChange="drawMain()"> 
+						</p>
+						
+					</div>
+					
+					<div id="headCenter" class="innerHead">
+						<p>
+						Lines:
+						<br>
+							Horizontal Density:
+							 <input type="number" value="5" id="inputGraphLinesHorizontal" onChange="drawMain()"> 
+							 <br>
+							Verticle Density:
+							<input type="number" value="5" id="inputGraphLinesVerticle" onChange="drawMain()"> 
+							<br>
+							Line Color:
+							<input type="color"  value="#303030" id="inputGraphLinesColor" onChange="drawMain()"> 
+							<br>
+							Line Thinkness:
+							<input type="number" value="2" id="inputGraphLinesThinkness" onChange="changeGraphLine()"> 
+							
+						 </p>
+					</div>
+
+					<div id="headRight" class="innerHead">
+						<p>
+							Graph width
+							 <input type="range" min="1" max="100" value="60" id="inputGraphWidth" onChange="changeGraphDimensions()"> 
+							 <br>
+							Graph Height
+							<input type="range" min="1" max="100" value="100" id="inputGraphHeight" onChange="changeGraphDimensions()"> 
+							
+							<p id="graphSizeInfo"> Width: 60%  Height: 100%</p>
+							
+							 <!-- <form action="javascript:changeGraphDimensions()">
+									<button type="submit">Flex Graph</button>
+								</form> -->
+						</p>
+					</div>
+				</div>
+				
+				
+				
+			<div id="wrapper-body">	
+				<div id="gBox">
+					<canvas id="gCanvas">
+					
+					</canvas>
+				</div>
+				
+				
+				<div id="txt">
+				
+				<div id="right-txt" class="push">
+				
+				</div>
+				
+				<div id="left-txt" class="push">
+				
+				</div>
+		
+				</div>
+			</div>	
+			
+</body>
+				</HTML>

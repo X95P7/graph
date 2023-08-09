@@ -1,0 +1,65 @@
+div {
+	border: 1px solid black;
+}
+
+.push{
+	width: 39%;
+	margin: 2%; 
+	height: 100%;
+	padding:2%;
+	display: inline-block;
+}
+
+.innerHead{
+	border:none;
+	padding:2%;
+}
+
+#wrapper-body{
+	padding: 0%;
+	margin:5%;
+	height: 100%;
+}
+
+#gbox{
+	width:60%;
+	float: left;
+	border: none;
+}
+
+#txt{
+	width:30%;
+	float: right;
+}
+
+#head {
+	margin: 0% 15% 0% 15%;
+	height: 30%;
+	display:block;
+	overflow:scroll;
+    overflow-x:hidden;
+}
+
+#headLeft{
+	float: left;
+}
+
+#headRight{
+	float: right;
+}
+
+#headCenter{
+	display: inline-block;
+}
+
+#left-txt{
+	float: left;
+}
+
+#right-txt{
+	float: right;
+}
+
+#gCanvas{
+	border: 1px solid black;
+}
